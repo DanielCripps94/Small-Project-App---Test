@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import {Route, Switch, withRouter} from 'react-router-dom'
+import ProjectList from './components/ProjectList'
+import CreateProject from './components/CreateProject'
+import ProjectUpdate from './components/ProjectUpdate'
 import './App.css';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path='/' component={ProjectList}></Route>
+        <Route path='/edit/:id' component={ProjectUpdate}></Route>
+        <Route path='/create' component={CreateProject}></Route>
+      </Switch>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
