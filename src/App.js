@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom'
-import ProjectList from './components/ProjectList'
+import ProjectList from './components/ProjectListContainer'
 import CreateProject from './components/CreateProject'
 import ProjectUpdate from './components/ProjectUpdate'
 import NavBar from './components/NavBar'
