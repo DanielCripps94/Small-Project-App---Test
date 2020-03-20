@@ -5,7 +5,7 @@ class ProjectList extends Component {
     render() { 
         return (  
             <div>
-                <h1>Hello</h1>
+                <h1>See projects bellow</h1>
             </div>
         )
     }
