@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import API from './API'
+import ProjectList from './ProjectList';
 
 class ProjectListContainer extends Component {
 
@@ -7,24 +8,18 @@ class ProjectListContainer extends Component {
         projects: []
     }
 
-    // fetchProjects = () => {
-    //     fetch('http://localhost:5000/projects').then(resp => resp.json()).then(data => this.setState({projects: data}))
-    // }
-
-    // componentDidMount () {
-    //     this.fetchProjects()
-    // }
-
     componentDidMount () {
         API.getProjects().then(data => this.setState({projects: data}))
     }
 
-
     render() { 
+
+        const { projects } = this.state
+
         return (  
             <div>
                 <h1>See projects bellow</h1>
-
+                {projects.map(project => <ProjectList project={project}/>)}
             </div>
         )
     }

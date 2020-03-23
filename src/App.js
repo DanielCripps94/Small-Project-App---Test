@@ -9,6 +9,7 @@ import './App.css';
 
 function App() {
   return (
+    <div className="wrapper">
     
     <div className="App">
       <NavBar />
@@ -17,6 +18,7 @@ function App() {
         <Route path='/userproject' component={ProjectUpdate}></Route>
         <Route path='/create' component={CreateProject}></Route>
       </Switch>
+    </div>
     </div>
   );
 }
