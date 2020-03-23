@@ -1,9 +1,10 @@
 import React from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom'
-import ProjectList from './components/ProjectListContainer'
+import ProjectListContainer from './components/ProjectListContainer'
 import CreateProject from './components/CreateProject'
 import ProjectUpdate from './components/ProjectUpdate'
 import NavBar from './components/NavBar'
+import API from './components/API'
 import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Switch>
-        <Route exact path='/projects' component={ProjectList}></Route>
+        <Route exact path='/projects' component={ProjectListContainer}></Route>
         <Route path='/userproject' component={ProjectUpdate}></Route>
         <Route path='/create' component={CreateProject}></Route>
       </Switch>

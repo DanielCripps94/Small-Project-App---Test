@@ -1,16 +1,11 @@
-import React from './react'
+import React from 'react'
+
+const baseUrl = 'http://localhost:5000/'
+const projectUrl = baseUrl + 'projects'
 
 const get = (url) => 
         fetch(url)
         .then(resp => resp.json())
-
-    
-    const getwithauth = (url) =>
-        fetch(url, {
-            headers: {
-            Authorization: localStorage.token
-            }
-        }).then(resp => resp.json()) 
     
     const post = (url, data) => 
         fetch(url, {
@@ -40,3 +35,8 @@ const get = (url) =>
             'Content-Type':'application/json'
         },
         })
+
+
+    const getProjects = () => get(projectUrl)
+
+    export default { getProjects }
