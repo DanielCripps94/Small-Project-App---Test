@@ -3,7 +3,7 @@
 }
 
 body {
-  background: grey;
+  background: beige;
 }
 
 .wrapper {
@@ -15,43 +15,46 @@ body {
 }
 
 .headerContainer {
+  background: grey;
   display: flex;
   justify-content: space-between;
   text-decoration: none;
   align-items: flex-start;
+  font-size: 0.5rem;
+  
 }
 
 .header--box1 {
-  font-size: 1rem;
+  
   cursor: pointer;
   border: none;
   background-color: none;
 }
 
 .header--box2 {
-  font-size: 1rem;
+ 
   cursor: pointer;
   border: none;
   background-color: none;
 }
 
 .header--box3 {
-  font-size: 1rem;
+  
   cursor: pointer;
   border: none;
   background-color: none;
 }
 
 .header--box1 h1 {
-  color: pink;
+  color: white;
 }
 
 .header--box2 h1 {
-  color: pink;
+  color: white;
 }
 
 .header--box3 h1 {
-  color: pink;
+  color: white;
 }
 
 a {
