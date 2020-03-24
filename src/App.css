@@ -15,11 +15,7 @@ body {
 }
 
 .headerContainer {
-<<<<<<< HEAD
   background: #180D01;
-=======
-  background: grey;
->>>>>>> 8c7dd209dd974c21912cab2653186a18d54efe0b
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -28,7 +24,6 @@ body {
   
 }
 
-<<<<<<< HEAD
 .linkContainer {
   display: flex;
   width: 30%;
@@ -37,10 +32,6 @@ body {
 }
 
 .header--box1 {
-=======
-.header--box1 {
-  
->>>>>>> 8c7dd209dd974c21912cab2653186a18d54efe0b
   cursor: pointer;
   border: none;
   background-color: none;
@@ -74,5 +65,19 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.divide--box {
+  clip-path: polygon(0 41%, 100% 26%, 100% 100%, 0% 100%);
+  background-color: black;
+  /* padding: 10em; */
+  height: 100vh;
+}
+
+.divide--box p{
+  margin-top: 20rem;
+  position: absolute;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 

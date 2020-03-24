@@ -5,10 +5,7 @@ export default class NavBar extends Component {
     render() {
         return (
             <div className='headerContainer'>
-<<<<<<< HEAD
                 <div className='linkContainer'>
-=======
->>>>>>> 8c7dd209dd974c21912cab2653186a18d54efe0b
                 <div className='header--box1'>
                 <Link to='./projects'><h1>Project List</h1></Link>
                 </div>
@@ -18,10 +15,7 @@ export default class NavBar extends Component {
                 <div className='header--box3'>
                 <Link to='./create'><h1>Start New Project</h1></Link>
                 </div>   
-<<<<<<< HEAD
                 </div>
-=======
->>>>>>> 8c7dd209dd974c21912cab2653186a18d54efe0b
             </div>
         )
     }
