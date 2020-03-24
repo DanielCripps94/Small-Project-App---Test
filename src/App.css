@@ -15,7 +15,11 @@ body {
 }
 
 .headerContainer {
+<<<<<<< HEAD
   background: #180D01;
+=======
+  background: grey;
+>>>>>>> 8c7dd209dd974c21912cab2653186a18d54efe0b
   display: flex;
   justify-content: space-between;
   text-decoration: none;
@@ -24,6 +28,7 @@ body {
   
 }
 
+<<<<<<< HEAD
 .linkContainer {
   display: flex;
   width: 30%;
@@ -32,6 +37,10 @@ body {
 }
 
 .header--box1 {
+=======
+.header--box1 {
+  
+>>>>>>> 8c7dd209dd974c21912cab2653186a18d54efe0b
   cursor: pointer;
   border: none;
   background-color: none;
