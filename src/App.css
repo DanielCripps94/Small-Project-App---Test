@@ -31,6 +31,12 @@ body {
   justify-content: space-between;
 }
 
+
+.intro--info {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 5000;
+  /* font-family: 'Playfair Display', serif; */
+}
 .header--box1 {
   cursor: pointer;
   border: none;
@@ -42,6 +48,7 @@ body {
   cursor: pointer;
   border: none;
   background-color: none;
+  font-weight: 6000n;
 }
 
 .header--box3 {
@@ -78,6 +85,7 @@ a {
   margin-top: 20rem;
   position: absolute;
   color: white;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif; 
+  
 }
 

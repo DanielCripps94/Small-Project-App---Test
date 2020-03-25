@@ -19,7 +19,7 @@ class ProjectListContainer extends Component {
 
         return (  
             <div>
-                <h1>Deriving innovative Ecommerce Business to enhace your brand </h1>
+                <h1 className='intro--info'>Deriving innovative Ecommerce Business to enhace your brand </h1>
                 {projects.map(project => <ProjectList project={project}/>)}
                 <div className='divide--box'>
                     <div className='info--box'>
